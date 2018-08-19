@@ -12,7 +12,7 @@ class Song
     # Check to see if the song has an artist variable
     # If it does, assign the artist variable the value of the artist's name
     # If it doesn't, return nil
-    self.artist != nil ? self.artist.name : nil
+    self.artist ? self.artist.name : nil
   end
 
 end

@@ -12,7 +12,7 @@ class Post
     # Check to see if the post has an author variable
     # If it does, assign the author variable the value of the author's name
     # If it doesn't, return nil
-    self.author != nil ? self.author.name : nil
+    self.author ? self.author.name : nil
   end
 
 end
