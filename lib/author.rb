@@ -5,7 +5,7 @@ class Author
 
   def initialize(name)
     @name = name
-    self.posts = [] # Create an empty array for the author's post instances
+    @posts = [] # Create an empty array for the author's post instances
   end
 
   def add_post(post)
