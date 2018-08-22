@@ -1,6 +1,7 @@
 # Create a "has many" relationship with the Post class
 class Author
-  attr_accessor :name, :posts
+  attr_accessor :name
+  attr_reader :posts
   @@post_count = 0  # Set post instance count tracker to zero
 
   def initialize(name)
