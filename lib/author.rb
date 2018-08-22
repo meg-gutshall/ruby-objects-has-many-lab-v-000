@@ -16,9 +16,7 @@ class Author
 
   def add_post_by_title(title)
     post = Post.new(title)  # Create a new post instance with a title
-    self.posts << post      # Add the post instance to the author's list of posts
-    post.author = self      # Assign the author to the post instance
-    @@post_count += 1       # Add one post instance to the count tracker
+    add_post(post)  # Execute add post method using newly created post instance
   end
 
   def self.post_count
